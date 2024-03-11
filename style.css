@@ -19,9 +19,8 @@ h1 {
     color: #007bff;
 }
 
-.table-scroll-container {
+.table-container {
     overflow-x: auto;
-    margin-top: 20px;
 }
 
 .data-table {
@@ -67,4 +66,15 @@ h1 {
 
 .action-btn:hover {
     background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px) {
+    .data-table th,
+    .data-table td {
+        padding: 12px;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
 }
