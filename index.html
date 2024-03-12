@@ -1,129 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Data Table</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-        <h1>PRODUCT INFORMATION</h1>
-        <div class="table-container">
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Select</th>
-                        <th>ID</th>
-                        <th>Product Name</th>
-                        <th>Title</th>
-                        <th>Description</th>
-                        <th>Vendor</th>
-                        <th>In Stock</th>
-                        <th>Buying Price</th>
-                        <th>Sale Price</th>
-                        <th>Purchase Qty</th>
-                        <th>Type</th>
-                        <th>Shipping Rates</th>
-                        <th>Refill Limit</th>
-                        <th>Location</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>001</td>
-                        <td>Product A</td>
-                        <td>Title A</td>
-                        <td>Description A</td>
-                        <td>Vendor A</td>
-                        <td>20</td>
-                        <td>$50</td>
-                        <td>$80</td>
-                        <td>100</td>
-                        <td>Type A</td>
-                        <td>$10</td>
-                        <td>200</td>
-                        <td>123 Main St</td>
-                        <td>
-                            <button class="action-btn">Add Vendor</button>
-                            <button class="action-btn">Add Products</button>
-                            <button class="action-btn">Edit Products</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>002</td>
-                        <td>Product B</td>
-                        <td>Title B</td>
-                        <td>Description B</td>
-                        <td>Vendor B</td>
-                        <td>25</td>
-                        <td>$70</td>
-                        <td>$60</td>
-                        <td>150</td>
-                        <td>Type B</td>
-                        <td>$40</td>
-                        <td>100</td>
-                        <td>123 Main St</td>
-                        <td>
-                            <button class="action-btn">Add Vendor</button>
-                            <button class="action-btn">Add Products</button>
-                            <button class="action-btn">Edit Products</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>003</td>
-                        <td>Product C</td>
-                        <td>Title C</td>
-                        <td>Description C</td>
-                        <td>Vendor C</td>
-                        <td>10</td>
-                        <td>$150</td>
-                        <td>$90</td>
-                        <td>170</td>
-                        <td>Type C</td>
-                        <td>$18</td>
-                        <td>290</td>
-                        <td>123 Main St</td>
-                        <td>
-                            <button class="action-btn">Add Vendor</button>
-                            <button class="action-btn">Add Products</button>
-                            <button class="action-btn">Edit Products</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>004</td>
-                        <td>Product D</td>
-                        <td>Title D</td>
-                        <td>Description D</td>
-                        <td>Vendor D</td>
-                        <td>29</td>
-                        <td>$70</td>
-                        <td>$20</td>
-                        <td>130</td>
-                        <td>Type D</td>
-                        <td>$90</td>
-                        <td>360</td>
-                        <td>123 Main St</td>
-                        <td>
-                            <button class="action-btn">Add Vendor</button>
-                            <button class="action-btn">Add Products</button>
-                            <button class="action-btn">Edit Products</button>
-                        </td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
+      <h1>PRODUCT INFORMATION</h1>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Vendor</th>
+              <th>In Stock</th>
+              <th>Buying Price</th>
+              <th>Sale Price</th>
+              <th>Purchase Qty</th>
+              <th>Type</th>
+              <th>Shipping Rates</th>
+              <th>Refill Limit</th>
+              <th>Location</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>001</td>
+              <td>Product A</td>
+              <td>Title A</td>
+              <td>Description A</td>
+              <td>Vendor A</td>
+              <td>20</td>
+              <td>$50</td>
+              <td>$80</td>
+              <td>100</td>
+              <td>Type A</td>
+              <td>$10</td>
+              <td>200</td>
+              <td>123 Main St</td>
+              <td class="action-cell">
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-edit"
+                    fill="none"
+                    height="20"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                    />
+                  </svg>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>002</td>
+              <td>Product B</td>
+              <td>Title B</td>
+              <td>Description B</td>
+              <td>Vendor B</td>
+              <td>25</td>
+              <td>$70</td>
+              <td>$60</td>
+              <td>150</td>
+              <td>Type B</td>
+              <td>$40</td>
+              <td>100</td>
+              <td>123 Main St</td>
+              <td class="action-cell">
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-edit"
+                    fill="none"
+                    height="20"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                    />
+                  </svg>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>003</td>
+              <td>Product C</td>
+              <td>Title C</td>
+              <td>Description C</td>
+              <td>Vendor C</td>
+              <td>10</td>
+              <td>$150</td>
+              <td>$90</td>
+              <td>170</td>
+              <td>Type C</td>
+              <td>$18</td>
+              <td>290</td>
+              <td>123 Main St</td>
+              <td class="action-cell">
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-edit"
+                    fill="none"
+                    height="20"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                    />
+                  </svg>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>004</td>
+              <td>Product D</td>
+              <td>Title D</td>
+              <td>Description D</td>
+              <td>Vendor D</td>
+              <td>29</td>
+              <td>$70</td>
+              <td>$20</td>
+              <td>130</td>
+              <td>Type D</td>
+              <td>$90</td>
+              <td>360</td>
+              <td>123 Main St</td>
+              <td class="action-cell">
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    height="20"
+                    viewBox="0 0 48 48"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path
+                      d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"
+                    />
+                  </svg>
+                </button>
+                <button class="action-btn">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-edit"
+                    fill="none"
+                    height="20"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                    />
+                  </svg>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
